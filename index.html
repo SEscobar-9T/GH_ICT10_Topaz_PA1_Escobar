@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>Temperature Checker and Converter</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(224, 131, 39);
+            background-color: rgb(9, 125, 171);
+        }
+
+        h2 {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(224, 131, 39);
+            font-size: 35px;
+        }
+
+        form {
+        background-color: rgb(139, 219, 248);
+        border-radius: 10px;
+        padding: 40px ;
+        margin: 0 auto;
+        width: 700px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Convert Fahrenheit to Celcius</h2>
+        <p>Check your temperature here:</p>
+        <hr />
+        <br>
+        <input type="number" id="temp" placehoder="enter your temperature">
+        <br>
+        <br>
+        <input type="button" py-click="checker_converter" value="Check Temperature">
+        <br>
+        <br>
+        <button type="button" onClick="window.location.reload()">Refresh</button>
+        <hr />
+        <br>
+    </form>
+
+
+    <div id="output"></div>
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>
